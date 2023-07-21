@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/generated.css">
+    <title>Document</title>
+</head>
+<body>
+    {{!-- {{details}} --}}
+    <button action="/excel_download">Download</button>
+    <div class="container">
+        <table class="main_table">
+            <tr class="table_row">
+                <th>faculty_name</th>
+                <th>lecture_title</th>
+                <th>sub_date</th>
+                <th>semester</th>
+                <th>overall_organization</th>
+                <th>relevent_content</th>
+                <th>satisfied_time_venue</th>
+                <th>intresting_session</th>
+                <th>lecture_topic_cover</th>
+                <th>opinion_on_speaker</th>
+                <th>useful_session</th>
+                <th>overall_effectiveness</th>
+                <th>additional_comments</th>
+            </tr>
+            {{#each details}}
+            <tr class="table_row">  
+                <td class="table_col">{{this.faculty_name}}</td>
+                <td class="table_col">{{this.lecture_title}}</td>
+                <td class="table_col">{{this.sub_date}}</td>
+                <td class="table_col">{{this.semester}}</td>
+                <td class="table_col">{{this.overall_organization}}</td>
+                <td class="table_col">{{this.relevent_content}}</td>
+                <td class="table_col">{{this.satisfied_time_venue}}</td>
+                <td class="table_col">{{this.intresting_session}}</td>
+                <td class="table_col">{{this.lecture_topic_cover}}</td>
+                <td class="table_col">{{this.opinion_on_speaker}}</td>
+                <td class="table_col">{{this.useful_session}}</td>
+                <td class="table_col">{{this.overall_effectiveness}}</td>
+                <td class="table_col">{{this.additional_comments}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+    
+</body>
+</html>

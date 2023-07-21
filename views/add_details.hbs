@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/addDetail.css">
+    <title>Add Lecture Details</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/store_details" method="post">
+        <select name="department" id="dept" class="dept_select" required>
+            <option value="" disabled selected hidden>Select</option>
+            <option value="Computer Engineering">Computer Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Automobile Engineering">Automobile Engineering</option>
+        </select>
+            <table class="main_table">
+                <tr class="table_row">
+                    <td class="table_col">
+                        Lecture Title
+                    </td>
+                    <td class="table_col">
+                        <input type="text" name="lecture_title" id="lecture_title" required>
+                    </td>
+                    <td class="table_col">
+                        Name of the Faculty:
+                    </td>
+                    <td class="table_col">
+                        <input type="text" name="faculty_name" id="lecture_name"required>
+                    </td>
+                </tr>
+                <tr class="table_row">
+                    <td class="table_col">
+                        Date
+                    </td>
+                    <td class="table_col">
+                        <input type="date" name="lecture_date" id="lecture_date" required>
+                    </td>
+                    <td class="table_col">
+                        Semester
+                    </td>
+                    <td class="table_col">
+                        <input type="checkbox" name="semester" value="1">1
+                        <input type="checkbox" name="semester" value="2">2
+                        <input type="checkbox" name="semester" value="3">3
+                        <input type="checkbox" name="semester" value="4">4
+                        <input type="checkbox" name="semester" value="5">5
+                        <input type="checkbox" name="semester" value="6">6
+                        <input type="checkbox" name="semester" value="7">7
+                        <input type="checkbox" name="semester" value="8">8
+                    </td>
+                </tr>
+                <tr class="table_row">
+                    <td>
+                        <input type="submit" value="Add">
+                        </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

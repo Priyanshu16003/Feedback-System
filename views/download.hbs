@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/download.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/response_table" method="post">
+            <table class="my_table">
+                <tr class="table_row">
+                    <td class="table_col">
+                        Lecture Detail    
+                    </td>
+                    <td class="table_col">
+                        <select name="lecture_title">
+                            <option value="" disabled selected hidden>Select</option>
+                            {{#each details}}
+                            <option value="{{this.lectureTitle}}">{{this.lectureTitle}}</option>
+                            {{/each}}
+                        </select>
+                    </td>
+                    <td class="table_col">
+                        Faculty Name    
+                    </td>
+                    <td class="table_col">
+                        <select name="faculty_name">
+                            <option value="" disabled selected hidden>Select</option>
+                            {{#each details}}
+                            <option value="{{this.facultyName}}">{{this.facultyName}}</option>
+                            {{/each}}
+                        </select>
+                    </td>
+                </tr>
+                <tr class="table_row">
+                    <td class="table_col">
+                        <input type="submit" value="Fetch">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

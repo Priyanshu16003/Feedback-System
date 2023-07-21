@@ -1,0 +1,83 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set global font and background color */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Style the container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the form and table */
+  form {
+    margin-bottom: 20px;
+  }
+  .my_table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  .table_row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  .table_col {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the select dropdowns */
+  select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  select:focus {
+    outline: none;
+    border-bottom: 1px solid #0077cc;
+  }
+  
+  /* Style the checkboxes */
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;
+  }
+  input[type="date"]:focus {
+    outline: none;
+    border-bottom: 1px solid #0077cc;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #005ea1;
+  }
+  
